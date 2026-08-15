@@ -1,0 +1,64 @@
+:root{
+    --bg-color:rgb(189, 189, 189);
+}
+
+body{
+    background: var(--bg-color);
+    text-align: center;
+}
+
+.my-padding{
+    padding-top: 5rem;
+}
+
+h1{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.marvel{
+    background: #c30000;
+    color: white;
+    padding: 0px 10px 3px 10px;
+    font-weight: 700;
+}
+.masterpiece{
+    display: block;
+    font-size: 1rem;
+    opacity: 0.7;
+    margin-top: -5px;
+}
+
+.movie-title{
+    font-size: 1.3rem;
+    font-family: sans-serif;
+}
+
+.title-label{
+    position: relative;
+    width: 100%;
+}
+
+.title-label h2{
+    position: relative;
+    display: inline-block;
+    padding: 0 8px;
+    font-size: 0.9rem;
+    text-align: center;
+    background-color:var(--bg-color) ;
+    z-index: 5;
+    color: #858484;
+}
+
+.title-label::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    height: 1px;
+    width: 100%;
+    background: #838383;
+    z-index: -1;
+}
